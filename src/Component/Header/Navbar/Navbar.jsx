@@ -1,3 +1,4 @@
+import { Parallax } from "react-parallax";
 import { Link, NavLink } from "react-router-dom";
 
 
@@ -9,7 +10,8 @@ const Navbar = () => {
             <li><Link to="/contact">Contact Us</Link></li>
         </>
     return (
-        <div className="navbar bg-base-100">
+        <Parallax>
+             <div className="navbar bg-slate-500">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,6 +47,7 @@ const Navbar = () => {
 
             </div>
         </div>
+        </Parallax>
     );
 };
 
